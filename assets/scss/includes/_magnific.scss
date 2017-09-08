@@ -488,6 +488,16 @@ img.mfp-img {
         font-size: 13px;
 
         &.lg {width: 100%;}
+
+        &:hover {
+          background-color: #ebfbff;
+          color: #6995a0;
+        }
+        &:focus {
+        border: 2px solid #cfcfcf;
+        font-weight: 700;
+        }
+
       }
 
       textarea {
@@ -528,7 +538,8 @@ img.mfp-img {
       margin: 10px 0 20px;
       padding-left: 80px;
       display: flex;
-      align-items: center;  
+      align-items: center; 
+
 
       span {line-height: 18px;font-size: 13px;}
 
@@ -550,6 +561,9 @@ img.mfp-img {
           margin-right: 10px;
           cursor: pointer;
           transition: .3s ease-in-out;
+          position: relative;
+
+          span {position: absolute;left: 100%;margin-left: 15px;white-space: nowrap;}
 
           &:before {
             display: block;
@@ -559,19 +573,27 @@ img.mfp-img {
             transition: .3s ease-in-out;
           }
 
-          &:hover:before {
-            opacity: .5;
-            transform: scale(1);
+          &:hover {
+            border: 1px solid #cfcfcf;
+            background-color: #ebfbff;
           }
           &.error {
-            border: 1px solid #c33;
+          color: #f15555;
+          background-color: #fee;
+          border-color: #f15555
           }
           
+        }
+
+        &:checked + label {
+            border: 1px solid #0e8eaf;
+            background-color: #0e8eaf;
         }
 
         &:checked + label:before {
           transform: scale(1);
           opacity: 1;
+          color: #fff;
         }
       
       
@@ -588,6 +610,7 @@ img.mfp-img {
     max-width: 90%;
     margin: 20px auto;
     padding: 40px 20px;
+    background: #fff;
 
     .mfp-close {top: 5px;right: 5px;font-size: 24px;}
 
@@ -613,6 +636,6 @@ img.mfp-img {
     }
     .dialog__form--checkbox {padding-left: 0;}
     .dialog__form--row.controls {padding-left: 0;}
-    .dialog__form--row.controls .btn {width: 100%;}
+    .dialog__form--row.controls .btn {width: 100%;display: block;text-align: center;font-weight: 600;}
 
 }
