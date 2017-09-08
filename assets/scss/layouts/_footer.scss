@@ -1,0 +1,92 @@
+.footer {
+  background-color: #fff;
+  padding: 40px 0 20px;
+  border-top: 1px solid rgba(black, .15);
+  color: $c_1;
+
+  p {
+    margin: 0;
+  }
+
+  nav {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  .payments {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      margin-right: 40px;
+      margin-bottom: 20px;
+      vertical-align: middle;
+      line-height: 1; 
+
+      img {
+        display: block;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+    font-weight: 400;
+  }
+
+  .social {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      vertical-align: middle;
+      line-height: 1; 
+
+      img {
+        display: block;
+      }
+
+      a {
+        display: block;
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+}
+
+@media #{$normal-down} {
+  .footer {
+    text-align: center;
+
+    p {display: inline-block;}
+
+    nav ul {
+      margin-bottom: 30px;
+      li {
+        display: inline-block;
+        margin: 0 10px 10px;
+
+        a {white-space: nowrap;}
+      }
+    }
+    .social li {margin: 0 20px;}
+
+    h3 {display: none;}
+
+    .payments {margin-bottom: 30px;}
+  }
+}
+
+@media #{$mobile-screen} {
+  .footer .payments li {margin: 0 20px 20px;}
+}

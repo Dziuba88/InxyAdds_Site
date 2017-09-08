@@ -1,0 +1,22 @@
+// Header 
+header.header
+  .navbar
+    .container
+      .navbar__wraper
+        .navbar__header
+          a(href="index.html").brand: img(src="img/logo.svg", alt="")
+        .navbar__content
+
+          nav.navbar__content--left
+            ul
+              +item('Main', 'index.html')
+              //+item('Ads formats', 'formats.html')
+              //+item('Blog', 'blog.html')
+              //+item('Events', 'events.html')
+              +item('About us', 'about.html')
+              +item('Contacts us', 'contacts.html')
+          nav.navbar__content--right
+            a.btn.btn__link.popup-form(href="#login") Login
+            a.btn.btn__blue.popup-form(href="#advertiser") Sign Up
+          button.navbar__toggle.fa.fa-bars
+// End Header 

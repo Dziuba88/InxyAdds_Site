@@ -1,0 +1,104 @@
+extends layouts/main
+block vars
+  - active__menu = 'Главная'
+block header
+  include inc/header
+block main
+  .container
+    section.page-header
+        h1
+          img(src="img/logo.svg", alt="")
+          span Result-oriented Advertising Network
+        p 
+          a.btn.btn--large.btn__green.popup-form(href="#advertiser") Add Advert
+          a.btn.btn--large.btn__blue.popup-form(href="#publisher") Add Site
+        .row.features
+          .col.md-10.offset-md-1
+            .row
+              .col.sm-3.xs-6
+                h2 Unlim.
+                p optimize of ads effectiveness
+              .col.sm-3.xs-6
+                h2 24/7
+                p support
+              .col.sm-3.xs-6
+                h2 100%
+                p traffic buying
+              .col.sm-3.xs-6
+                h2
+                  small from
+                  span $15
+                p on-demand payments
+    section.page-content
+      h1 For developers and webmasters
+      p We bring in high income to you from your web traffic. We have a lot of direct advertisers from all over the world, so we immediately buy all your traffic.
+      p We provide ready templates of advertising blocks that you just need to paste into the website. The templates are created in accordance with the latest trends of affiliate programs and combine: design and functionality, the optimal level of turning web traffic into income, compatibility with various platforms and screens.
+      h2 By cooperating with InxyAds you get
+      dl
+        dt Full conversion of web traffic into income
+        dd No matter what niche your product is in, we will buy all the traffic and create for you a discreet and effective promotional offer.
+        dt Safe advertising
+        dd All ads are manually verified to avoid prohibited content on your website.
+        dt Personal manager-analyst
+        dd You will have a personal manager dealing solely with your advertising campaign.
+        dt Rate control
+        dd You choose the rate per click or thousand impressions by yourself.
+        dt Quick launch of ads
+        dd You insert the code and immediately start showing advertising. Within 24 hours, we optimize advertising so that it brings the highest income.
+        dt Referral program
+        dd Earn from 5 % to 10 %. Your percentage grows with your income.
+        dt Payouts from $15
+        dd We pay whenever you want in a convenient way for you.
+
+      p: .btn.btn--large.btn__green.popup-form(href="#publisher") Add Site
+      h1 For advertisers
+      p With InxyAds you will find new customers and increase your visibility in the market. At your service, there is an advertising network with traffic from 192 countries from computers, smartphones, and tablets.
+      p We will create an advertising campaign for you, taking into account the specifics of your business and the needs of the audience. Your personal manager will be monitoring the effectiveness of advertising and constantly improving it.
+      h2 By cooperating with InxyAds you get
+      dl
+        dt Launch of campaign in less than 24 hours
+        dd Sign up and start getting new customers tomorrow.
+        dt Performance-related pay
+        dd You choose the required indicators: cost per click or thousand impressions, and pay only for them.
+        dt Personal manager 24/7
+        dd Each advertiser has his own manager who helps to create a campaign and helps to improve its effectiveness and final results.
+        dt Transparent reporting
+        dd You get all data on advertising in real time.
+        dt Security and protection against fraud
+        dd Our unique traffic filtering technologies analyze each user and provide the maximum quality of traffic.
+
+      p: .btn.btn--large.btn__blue.popup-form(href="#advertiser") Add Advert
+
+      h2 Payment methods
+      ul.payments
+        li: img(src="img/-e-webmoney.png", alt="")
+        li: img(src="img/-e-epayments.png", alt="")
+        li: img(src="img/-e-paxum.png", alt="")
+        li: img(src="img/-e-payoneer.png", alt="")
+        li: img(src="img/-e-payza.png", alt="")
+        li: img(src="img/-e-skrill.png", alt="")
+        li: img(src="img/-e-paypal.png", alt="")
+    section.social-follow
+      .row
+        .col.lg-4.md-6
+          script.
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+          .fb-page(
+            data-href="https://www.facebook.com/imdb" 
+            data-hide-cover="false"
+            data-show-facepile="true"
+          )
+
+
+
+        .col.lg-4.md-6
+          | <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+          | <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/jeffweiner08" data-format="inline" data-related="false"></script>
+        .col.lg-4
+          | <a class="twitter-timeline" data-tweet-limit="1" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

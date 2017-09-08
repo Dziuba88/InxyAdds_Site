@@ -1,0 +1,178 @@
+// Footer 
+footer.footer
+  .container
+    .row
+      .col.lg-3.order-lg-1.order-xs-2
+        p InxyAds.com © 2017
+        p Part of 
+          a(href="") INXY.COM
+        nav
+          ul 
+            li: a.popup-form(href="#advertiser") Place an advertisment
+            li: a.popup-form(href="#publisher") Add site
+            li: a(href="terms.html") Terms & Conditions
+      .col.lg-7.order-lg-2.order-xs-1
+        ul.payments
+          li: img(src="img/-e-webmoney.png", alt="")
+          li: img(src="img/-e-epayments.png", alt="")
+          li: img(src="img/-e-paxum.png", alt="")
+          li: img(src="img/-e-payoneer.png", alt="")
+          li: img(src="img/-e-payza.png", alt="")
+          li: img(src="img/-e-skrill.png", alt="")
+          li: img(src="img/-e-paypal.png", alt="")
+      .col.lg-2.order-lg-3.order-xs-3
+        h3 Follow us
+        ul.social
+          li: a(href="https://twitter.com/InxyAds" target="_blank"): img(src="img/-s-twitter.png", alt="")
+          li: a(href="https://www.facebook.com/inxyads/" target="_blank"): img(src="img/-s-facebook.png", alt="")
+          li: a(href="https://www.linkedin.com/in/inxy-ads-b35271147/" target="_blank"): img(src="img/-s-linkedin.png", alt="")
+
+
+// End Footer 
+
+
+// Modals
+#advertiser.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Registration
+  nav
+    ul.btn--group
+      li: a.btn.active Advertiser
+      li: a.btn.popup-form(href="#publisher") Publisher 
+
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label(for="advertiser-email") Email
+      input(type="email" name="advertiser-email" placeholder="yourname@site.com" required)#advertiser-email
+    .dialog__form--row
+      label(for="advertiser-pass") Password
+      input(type="password" name="advertiser-pass" placeholder="Enter Password" required)#advertiser-pass
+    .dialog__form--row
+      label(for="advertiser-confirm") Confirm password
+      input(type="password" name="advertiser-confirm" placeholder="Confirm Password" required)#advertiser-confirm
+    .dialog__form--checkbox
+      input(type="checkbox" name="advertiser-terms" required)#advertiser-terms
+      label(for="advertiser-terms")
+      span 
+        | I have read 
+        a(href="terms.html") terms and conditions
+        | <br>and I agree with it
+    .dialog__form--checkbox
+      input(type="checkbox" name="advertiser-news")#advertiser-news
+      label(for="advertiser-news")
+      span I want to receive emails about discounts and news of Inxy ADS. Once per month.
+    .dialog__form--row.controls
+      button.btn.btn__blue(type="submit") Sign Up
+
+
+#publisher.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Registration
+  nav
+    ul.btn--group
+      li: a.btn.popup-form(href="#advertiser") Advertiser
+      li: a.btn.active Publisher 
+
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label(for="publisher-email") Email
+      input(type="email" name="publisher-email" placeholder="yourname@site.com" required)#publisher-email
+    .dialog__form--row
+      label(for="publisher-pass") Password
+      input(type="password" name="publisher-pass" placeholder="Enter Password" required)#publisher-pass
+    .dialog__form--row
+      label(for="publisher-confirm") Confirm password
+      input(type="password" name="publisher-confirm" placeholder="Confirm Password" required)#publisher-confirm
+    .dialog__form--row
+      label(for="publisher-model") Price model
+      select#publisher-model
+        option CPM
+        option CPА
+        option RevShare
+    .dialog__form--row
+      label(for="publisher-geo") Geo targeting
+      select#publisher-geo
+        option USA
+        option option 2
+        option option 3
+    .dialog__form--row
+      label(for="publisher-format") Ad format
+      select#publisher-format
+        option Баннеры
+        option PopUnder 
+        option PushUp 
+        option Branding   
+    .dialog__form--row
+      label(for="publisher-currency") Currency
+      select#publisher-currency
+        option USD
+        option RUB 
+        option EURO 
+    .dialog__form--row
+      label(for="publisher-brate") Banner Rate
+      input(type="text" name="publisher-brate" placeholder="0.00 USD" required)#publisher-brate
+    .dialog__form--row
+      label(for="publisher-prate") Popunder Rate
+      input(type="text" name="publisher-prate" placeholder="0.00 USD" required)#publisher-prate
+    .dialog__form--checkbox
+      input(type="checkbox" name="advertiser-terms" required)#advertiser-terms
+      label(for="advertiser-terms")
+      span 
+        | I have read 
+        a(href="terms.html") terms and conditions
+        | <br>and I agree with it
+    .dialog__form--checkbox
+      input(type="checkbox" name="advertiser-news")#advertiser-news
+      label(for="advertiser-news")
+      span I want to receive emails about discounts and news of Inxy ADS. Once per month.
+    .dialog__form--row.controls
+      button.btn.btn__blue(type="submit") Sign Up
+
+
+#login.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Authorization
+  nav
+    ul.btn--group
+      li: a.btn.active Advertiser
+      li: a.btn.popup-form(href="#login2") Publisher 
+
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label(for="login-email") Email
+      input(type="email" name="login-email" placeholder="yourname@site.com" required)#login-email
+    .dialog__form--row
+      label(for="login-pass") Password
+      input(type="password" name="login-pass" placeholder="Enter Password" required)#login-pass
+    .dialog__form--checkbox
+      input(type="checkbox" name="login-news")#login-remember
+      label(for="login-remember")
+      span Remember me
+    .dialog__form--row.controls
+      button.btn.btn__blue(type="submit") Sign In
+
+#login2.zoom-anim-dialog.mfp-hide.dialog.user-forms
+  h3.dialog__header Authorization
+  nav
+    ul.btn--group
+      li: a.btn.popup-form(href="#login") Advertiser
+      li: a.btn.active Publisher 
+
+  form(action="").dialog__form.validate__form
+    .dialog__form--row
+      label(for="login-email") Email
+      input(type="email" name="login-email" placeholder="yourname@site.com" required)#login-email
+    .dialog__form--row
+      label(for="login-pass") Password
+      input(type="password" name="login-pass" placeholder="Enter Password" required)#login-pass
+    .dialog__form--checkbox
+      input(type="checkbox" name="login-news")#login-remember
+      label(for="login-remember")
+      span Remember me
+    .dialog__form--row.controls
+      button.btn.btn__blue(type="submit") Sign In
+
+
+
+
+
+
+
+// End Modals 

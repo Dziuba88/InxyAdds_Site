@@ -1,0 +1,38 @@
+//== Media Query Ranges
+$sm-screen: 700px !default;
+$md-screen: 1000px !default;
+$lg-screen: 1240px !default;
+
+//== MEDIA BREAKPOINTS
+$mobile-screen: "only screen and (max-width : #{$sm-screen - 1})" !default;
+$tablet-screen: "only screen and (min-width : #{$sm-screen}) and (max-width : #{$md-screen - 1})" !default;
+$normal-screen: "only screen and (min-width : #{$md-screen}) and (max-width : #{$lg-screen - 1})" !default;
+
+$tablet-up: "only screen and (min-width : #{$sm-screen})" !default;
+$normal-up: "only screen and (min-width : #{$md-screen})" !default;
+$large-up: "only screen and (min-width : #{$lg-screen})" !default;
+
+$tablet-down: "only screen and (max-width : #{$md-screen - 1})" !default;
+$normal-down: "only screen and (max-width : #{$lg-screen - 1})" !default;
+
+//== Grid
+$num-cols: 12 !default;
+$gutter-width: 20px !default;
+
+
+$basefont: 'Open Sans', sans-serif !default;
+
+
+$transition: all .3s cubic-bezier(0.4, 0, 0.2, 1) !default;
+
+$c_1: #3e3e3e !default;
+$c_2: #2dbbe0 !default;
+$c_3: #00b5e1 !default;
+$c_4: #76c02d !default;
+$c_5: #d6d5e7 !default;
+$c_6: #333144 !default;
+
+
+
+
+

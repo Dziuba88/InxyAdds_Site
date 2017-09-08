@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INXYADS | Contacts us</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body class="main__page" id="top">
+    <!-- Header -->
+    <header class="header">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar__wraper">
+            <div class="navbar__header"><a class="brand" href="index.html"><img src="img/logo.svg" alt=""></a></div>
+            <div class="navbar__content">
+              <nav class="navbar__content--left">
+                <ul>
+                  <li><a href="index.html">Main</a></li>
+                  <!--+item('Ads formats', 'formats.html')-->
+                  <!--+item('Blog', 'blog.html')-->
+                  <!--+item('Events', 'events.html')-->
+                  <li><a href="about.html">About us</a></li>
+                  <li><a class="active" href="contacts.html">Contacts us</a></li>
+                </ul>
+              </nav>
+              <nav class="navbar__content--right"><a class="btn btn__link popup-form" href="#login">Login</a><a class="btn btn__blue popup-form" href="#advertiser">Sign Up</a></nav>
+              <button class="navbar__toggle fa fa-bars"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Main Content -->
+    <main class="maincontent">
+      <div class="container">
+        <section class="page-header"></section>
+        <div class="row">
+          <div class="col md-10 offset-md-1">
+            <section class="page-content contacts">
+              <div class="row">
+                <div class="col md-7">
+                  <h1>Ask a Question</h1>
+                  <h4>We will answer your questions about our service<br>within 24 hours</h4>
+                  <form class="validate__form" action="">
+                    <div class="dialog__form--row">
+                      <label for="contact-name">Name</label>
+                      <input type="text" name="contact-name" required id="contact-name">
+                    </div>
+                    <div class="dialog__form--row">
+                      <label for="contact-email">Email</label>
+                      <input type="email" name="contact-email" required id="contact-email">
+                    </div>
+                    <div class="dialog__form--row">
+                      <label for="contact-subject">Subject</label>
+                      <input class="lg" type="text" name="contact-subject" required id="contact-subject">
+                    </div>
+                    <div class="dialog__form--row start">
+                      <label for="contact-message">Message</label>
+                      <textarea id="contact-message" name="contact-message" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="dialog__form--row">
+                      <div class="g-recaptcha" data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs"></div>
+                    </div>
+                    <div class="dialog__form--row controls">
+                      <button class="btn btn__blue" type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col md-5">
+                  <h1>Contacts</h1>
+                  <p><a href="mailto:support@inxyads.com">support@inxyads.com</a></p>
+                  <p><span class="phone">+357 25104256</span></p>
+                  <p>INXY LTD. Reg № HE354067<br>12 Agias Zonis str., 4th floor,<br>Suite 401, 3027, Limassol, Cyprus</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Content -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col lg-3 order-lg-1 order-xs-2">
+            <p>InxyAds.com © 2017</p>
+            <p>Part of <a href="">INXY.COM</a></p>
+            <nav>
+              <ul> 
+                <li><a class="popup-form" href="#advertiser">Place an advertisment</a></li>
+                <li><a class="popup-form" href="#publisher">Add site</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col lg-7 order-lg-2 order-xs-1">
+            <ul class="payments">
+              <li><img src="img/-e-webmoney.png" alt=""></li>
+              <li><img src="img/-e-epayments.png" alt=""></li>
+              <li><img src="img/-e-paxum.png" alt=""></li>
+              <li><img src="img/-e-payoneer.png" alt=""></li>
+              <li><img src="img/-e-payza.png" alt=""></li>
+              <li><img src="img/-e-skrill.png" alt=""></li>
+              <li><img src="img/-e-paypal.png" alt=""></li>
+            </ul>
+          </div>
+          <div class="col lg-2 order-lg-3 order-xs-3">
+            <h3>Follow us</h3>
+            <ul class="social">
+              <li><a href="https://twitter.com/InxyAds" target="_blank"><img src="img/-s-twitter.png" alt=""></a></li>
+              <li><a href="https://www.facebook.com/inxyads/" target="_blank"><img src="img/-s-facebook.png" alt=""></a></li>
+              <li><a href="https://www.linkedin.com/in/inxy-ads-b35271147/" target="_blank"><img src="img/-s-linkedin.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Modals-->
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="advertiser">
+      <h3 class="dialog__header">Registration</h3>
+      <nav>
+        <ul class="btn--group">
+          <li><a class="btn active">Advertiser</a></li>
+          <li><a class="btn popup-form" href="#publisher">Publisher </a></li>
+        </ul>
+      </nav>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <label for="advertiser-email">Email</label>
+          <input type="email" name="advertiser-email" placeholder="yourname@site.com" required id="advertiser-email">
+        </div>
+        <div class="dialog__form--row">
+          <label for="advertiser-pass">Password</label>
+          <input type="password" name="advertiser-pass" placeholder="Enter Password" required id="advertiser-pass">
+        </div>
+        <div class="dialog__form--row">
+          <label for="advertiser-confirm">Confirm password</label>
+          <input type="password" name="advertiser-confirm" placeholder="Confirm Password" required id="advertiser-confirm">
+        </div>
+        <div class="dialog__form--checkbox">
+          <input type="checkbox" name="advertiser-terms" required id="advertiser-terms">
+          <label for="advertiser-terms"></label><span>
+             I have read <a href="terms.html">terms and conditions</a><br>and I agree with it</span>
+        </div>
+        <div class="dialog__form--checkbox">
+          <input type="checkbox" name="advertiser-news" id="advertiser-news">
+          <label for="advertiser-news"></label><span>I want to receive emails about discounts and news of Inxy ADS. Once per month.</span>
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__blue" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="publisher">
+      <h3 class="dialog__header">Registration</h3>
+      <nav>
+        <ul class="btn--group">
+          <li><a class="btn popup-form" href="#advertiser">Advertiser</a></li>
+          <li><a class="btn active">Publisher </a></li>
+        </ul>
+      </nav>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <label for="publisher-email">Email</label>
+          <input type="email" name="publisher-email" placeholder="yourname@site.com" required id="publisher-email">
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-pass">Password</label>
+          <input type="password" name="publisher-pass" placeholder="Enter Password" required id="publisher-pass">
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-confirm">Confirm password</label>
+          <input type="password" name="publisher-confirm" placeholder="Confirm Password" required id="publisher-confirm">
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-model">Price model</label>
+          <select id="publisher-model">
+            <option>CPM</option>
+            <option>CPА</option>
+            <option>RevShare</option>
+          </select>
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-geo">Geo targeting</label>
+          <select id="publisher-geo">
+            <option>USA</option>
+            <option>option 2</option>
+            <option>option 3</option>
+          </select>
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-format">Ad format</label>
+          <select id="publisher-format">
+            <option>Баннеры</option>
+            <option>PopUnder </option>
+            <option>PushUp </option>
+            <option>Branding   </option>
+          </select>
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-currency">Currency</label>
+          <select id="publisher-currency">
+            <option>USD</option>
+            <option>RUB </option>
+            <option>EURO </option>
+          </select>
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-brate">Banner Rate</label>
+          <input type="text" name="publisher-brate" placeholder="0.00 USD" required id="publisher-brate">
+        </div>
+        <div class="dialog__form--row">
+          <label for="publisher-prate">Popunder Rate</label>
+          <input type="text" name="publisher-prate" placeholder="0.00 USD" required id="publisher-prate">
+        </div>
+        <div class="dialog__form--checkbox">
+          <input type="checkbox" name="advertiser-terms" required id="advertiser-terms">
+          <label for="advertiser-terms"></label><span>
+             I have read <a href="terms.html">terms and conditions</a><br>and I agree with it</span>
+        </div>
+        <div class="dialog__form--checkbox">
+          <input type="checkbox" name="advertiser-news" id="advertiser-news">
+          <label for="advertiser-news"></label><span>I want to receive emails about discounts and news of Inxy ADS. Once per month.</span>
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__blue" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="login">
+      <h3 class="dialog__header">Authorization</h3>
+      <nav>
+        <ul class="btn--group">
+          <li><a class="btn active">Advertiser</a></li>
+          <li><a class="btn popup-form" href="#login2">Publisher </a></li>
+        </ul>
+      </nav>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <label for="login-email">Email</label>
+          <input type="email" name="login-email" placeholder="yourname@site.com" required id="login-email">
+        </div>
+        <div class="dialog__form--row">
+          <label for="login-pass">Password</label>
+          <input type="password" name="login-pass" placeholder="Enter Password" required id="login-pass">
+        </div>
+        <div class="dialog__form--checkbox">
+          <input type="checkbox" name="login-news" id="login-remember">
+          <label for="login-remember"></label><span>Remember me</span>
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__blue" type="submit">Sign In</button>
+        </div>
+      </form>
+    </div>
+    <div class="zoom-anim-dialog mfp-hide dialog user-forms" id="login2">
+      <h3 class="dialog__header">Authorization</h3>
+      <nav>
+        <ul class="btn--group">
+          <li><a class="btn popup-form" href="#login">Advertiser</a></li>
+          <li><a class="btn active">Publisher </a></li>
+        </ul>
+      </nav>
+      <form class="dialog__form validate__form" action="">
+        <div class="dialog__form--row">
+          <label for="login-email">Email</label>
+          <input type="email" name="login-email" placeholder="yourname@site.com" required id="login-email">
+        </div>
+        <div class="dialog__form--row">
+          <label for="login-pass">Password</label>
+          <input type="password" name="login-pass" placeholder="Enter Password" required id="login-pass">
+        </div>
+        <div class="dialog__form--checkbox">
+          <input type="checkbox" name="login-news" id="login-remember">
+          <label for="login-remember"></label><span>Remember me</span>
+        </div>
+        <div class="dialog__form--row controls">
+          <button class="btn btn__blue" type="submit">Sign In</button>
+        </div>
+      </form>
+    </div>
+    <!-- End Modals -->
+    <!-- Base Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

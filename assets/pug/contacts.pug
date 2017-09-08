@@ -1,0 +1,38 @@
+extends layouts/main
+block vars
+  - active__menu = 'Contacts us'
+block header
+  include inc/header
+block main
+  .container
+    section.page-header
+    .row
+      .col.md-10.offset-md-1
+        section.page-content.contacts
+          .row
+            .col.md-7
+              h1 Ask a Question
+              h4 We will answer your questions about our service<br>within 24 hours
+              form(action="").validate__form
+                .dialog__form--row
+                  label(for="contact-name") Name
+                  input(type="text" name="contact-name" required)#contact-name
+                .dialog__form--row
+                  label(for="contact-email") Email
+                  input(type="email" name="contact-email" required)#contact-email
+                .dialog__form--row
+                  label(for="contact-subject") Subject
+                  input(type="text" name="contact-subject" required)#contact-subject.lg
+                .dialog__form--row.start
+                  label(for="contact-message") Message
+                  textarea#contact-message(name="contact-message", cols="30", rows="10", required)
+                .dialog__form--row
+                  .g-recaptcha(data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs")
+                .dialog__form--row.controls
+                  button.btn.btn__blue(type="submit") Send
+            .col.md-5
+              h1 Contacts
+              p: a(href="mailto:support@inxyads.com") support@inxyads.com
+              p: span.phone +357 25104256
+              p INXY LTD. Reg № HE354067<br>12 Agias Zonis str., 4th floor,<br>Suite 401, 3027, Limassol, Cyprus
+
