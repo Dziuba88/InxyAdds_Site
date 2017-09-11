@@ -537,8 +537,6 @@ img.mfp-img {
     &--checkbox {
       margin: 10px 0 20px;
       padding-left: 80px;
-      display: flex;
-      align-items: center; 
 
 
       span {line-height: 18px;font-size: 13px;}
@@ -549,52 +547,54 @@ img.mfp-img {
         opacity: 0;
 
         + label {
-          font-family: 'FontAwesome';
           display: flex;
           align-items: center;
-          justify-content: space-around;
-          width: 25px;
-          height: 25px;
-          border: 1px solid #cfcfcf;
-          border-radius: 4px;
           flex: none;
-          margin-right: 10px;
           cursor: pointer;
           transition: .3s ease-in-out;
-          position: relative;
+          user-select: none;
 
-          span {position: absolute;left: 100%;margin-left: 15px;white-space: nowrap;}
+          span {
+            display: block;
+            flex: 1;
+          }
 
           &:before {
+            flex: none;
+            font-family: 'FontAwesome';
             display: block;
             content: '\f00c';
-            transform: scale(0);
-            opacity: 0;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            margin-right: 10px;
+            border: 1px solid #cfcfcf;
+            border-radius: 4px;
             transition: .3s ease-in-out;
+            text-align: center;
+            color: #fff;
+
           }
 
-          &:hover {
+          &:hover:before {
             border: 1px solid #cfcfcf;
             background-color: #ebfbff;
+            color: #ebfbff;
           }
-          &.error {
-          color: #f15555;
-          background-color: #fee;
-          border-color: #f15555
+          &.error:before {
+            color: #f15555;
+            background-color: #fee;
+            border-color: #f15555;
+            color: #fee;
           }
           
         }
 
-        &:checked + label {
+        &:checked + label:before {
             border: 1px solid #0e8eaf;
             background-color: #0e8eaf;
         }
 
-        &:checked + label:before {
-          transform: scale(1);
-          opacity: 1;
-          color: #fff;
-        }
       
       
       
