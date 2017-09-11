@@ -554,11 +554,11 @@ p {
 
 }
 
-
-
+#twitter-widget-0 {max-height: 214px !important}
+.IN-button {display: none;}
 @media #{$normal-down} {
   .page-content {padding: 50px;margin-bottom: 50px;}  
-  .features h2 {font-size: 36px;}
+  .features h2 {font-size: 32px;}
   .social-follow {text-align: center;}
 
   .green-block {
@@ -570,6 +570,7 @@ p {
   }
 }
 @media #{$mobile-screen} {
+  body {display: block;}
   h1 {margin: 20px 0;font-size: 32px;}
   h2 {margin: 20px 0;font-size: 24px;}
   .page-content {padding: 20px;margin-bottom: 20px;}  
@@ -588,6 +589,31 @@ p {
   .page-content.contacts h1 {margin: 0 0 20px;padding-top: 20px;}
   .page-content.contacts .dialog__form--row label {text-align: left;}
   .page-content .payments li {margin: 0 10px 20px;}
+
+  .IN-widget {display: none !important; }
+  .fb_iframe_widget {
+    span, iframe {
+      width: 100% !important;
+    }
+  }
+  #twitter-widget-0 {
+    max-height: 1000px !important;
+}
+.IN-button {
+  display: block;
+  background-color: #007bb5;
+  padding: 20px 0;
+
+  img {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+  }
+}
+body .maincontent {
+  overflow: hidden;
+  flex: none;
 }
 
-#twitter-widget-0 {height: 214px !important}
+}
+

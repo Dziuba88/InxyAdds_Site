@@ -38,7 +38,7 @@
   @while $i <= $num-cols {
     $perc: unquote((100 / ($num-cols / $i)) + "%");
     &.xs-#{$i} {
-      max-width: $perc;
+      width: $perc;
     }
     $i: $i + 1;
   }
