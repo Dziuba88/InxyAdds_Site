@@ -577,7 +577,7 @@ p {
   .page-header h1 {font-size: 18px;}
   .page-header h1 img {max-width: 80%;}
   .page-header p {margin: 20px 0 50px;}
-  .page-header p .btn {margin: 0 0 30px;}
+  .page-header p .btn {margin: 0 20px 30px;}
   .footer .payments li {margin: 0 20px;}
   .features h2 {font-size: 34px;}
   .features h2 small {font-size: 11px;margin-right: 5px;}
@@ -593,11 +593,12 @@ p {
   .IN-widget {display: none !important; }
   .fb_iframe_widget {
     span, iframe {
-      width: 100% !important;
+      max-width: 100%!important;
+      margin: 0 auto;
     }
   }
   #twitter-widget-0 {
-    max-height: 1000px !important;
+    max-height: none !important;
 }
 .IN-button {
   display: block;
