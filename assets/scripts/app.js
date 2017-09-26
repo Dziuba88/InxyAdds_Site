@@ -26,6 +26,7 @@ $(document).ready(function() {
         errorPlacement: function(error, element) {{
           $( element ).parent().find('label').addClass("error");
           $( element ).addClass("error");
+          error.insertBefore(element);
         }},
       });
     });
@@ -33,6 +34,7 @@ $(document).ready(function() {
 
   if($(".popup-form").length) {
     $('.popup-form').magnificPopup({
+      hashTracking: true,
       type: 'inline',
       closeBtnInside: true,
       preloader: false,

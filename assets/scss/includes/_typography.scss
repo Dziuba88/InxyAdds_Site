@@ -324,7 +324,23 @@ label.error {
 input.error, textarea.error {
           color: #f15555;
           background-color: #fee;
-          border-color: #f15555
+          border-color: #f15555;
+}
+
+.dialog__form--row {
+  position: relative;
+
+  span.error {
+    color: #f15555;
+    font-size: 75%;
+    line-height: 1;
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+  }
+  label.error, input.error, textarea.error {
+    margin-bottom: 20px !important;
+  }
 }
 
 

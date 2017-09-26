@@ -460,6 +460,7 @@ img.mfp-img {
       display: flex;
       align-items: center;  
 
+
       &.start {
         align-items: flex-start;
 
@@ -539,6 +540,8 @@ img.mfp-img {
       padding-left: 80px;
 
 
+      span.error {display: none !important;}
+
       span {line-height: 18px;font-size: 13px;}
 
       input {
@@ -581,6 +584,7 @@ img.mfp-img {
             background-color: #ebfbff;
             color: #ebfbff;
           }
+          
           &.error:before {
             color: #f15555;
             background-color: #fee;

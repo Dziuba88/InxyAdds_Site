@@ -32,12 +32,12 @@ footer.footer
 
 
 // Modals
-#advertiser.zoom-anim-dialog.mfp-hide.dialog.user-forms
+#advertiser-modal.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h3.dialog__header Registration
   nav
     ul.btn--group
       li: a.btn.active Advertiser
-      li: a.btn.popup-form(href="#publisher") Publisher 
+      li: a.btn.popup-form(href="#publisher-modal") Publisher 
 
   form(action="").dialog__form.validate__form
     .dialog__form--row
@@ -64,11 +64,11 @@ footer.footer
       button.btn.btn__blue(type="submit") Sign Up
 
 
-#publisher.zoom-anim-dialog.mfp-hide.dialog.user-forms
+#publisher-modal.zoom-anim-dialog.mfp-hide.dialog.user-forms
   h3.dialog__header Registration
   nav
     ul.btn--group
-      li: a.btn.popup-form(href="#advertiser") Advertiser
+      li: a.btn.popup-form(href="#advertiser-modal") Advertiser
       li: a.btn.active Publisher 
 
   form(action="").dialog__form.validate__form

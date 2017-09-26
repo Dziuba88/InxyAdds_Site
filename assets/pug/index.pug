@@ -10,8 +10,8 @@ block main
           img(src="img/logo.svg", alt="")
           span Result-oriented Advertising Network
         p 
-          a.btn.btn--large.btn__green.popup-form(href="#advertiser") Add Advert
-          a.btn.btn--large.btn__blue.popup-form(href="#publisher") Add Site
+          a.btn.btn--large.btn__green.popup-form(href="#advertiser-modal") Add Advert
+          a.btn.btn--large.btn__blue.popup-form(href="#publisher-modal") Add Site
         .row.features
           .col.md-10.offset-md-1
             .row
@@ -30,7 +30,7 @@ block main
                   span $15
                 p on-demand payments
     section.page-content
-      h1 For developers and webmasters
+      h1#developers For developers and webmasters
       p We bring in high income to you from your web traffic. We have a lot of direct advertisers from all over the world, so we immediately buy all your traffic.
       p We provide ready templates of advertising blocks that you just need to paste into the website. The templates are created in accordance with the latest trends of affiliate programs and combine: design and functionality, the optimal level of turning web traffic into income, compatibility with various platforms and screens.
       h2 By cooperating with InxyAds you get
@@ -50,7 +50,7 @@ block main
         dt Payouts from $15
         dd We pay whenever you want in a convenient way for you.
 
-      p: .btn.btn--large.btn__green.popup-form(href="#publisher") Add Site
+      p: .btn.btn--large.btn__blue.popup-form(href="#publisher-modal") Add Site
       .green-block
         h2 Three steps to make a profit with InxyAds
         .row
@@ -58,7 +58,7 @@ block main
             .green-block_item 
               .step 1
               .step--text
-                strong: a.popup-form(href="#publisher") Sign up
+                strong: a.popup-form(href="#publisher-modal") Sign up
                 span  in less than<br>a minute.
           .col.md-4
             .green-block_item 
@@ -73,7 +73,7 @@ block main
                 strong Get profit
                 span  from an effective<br>advertising campaign!
       
-      h1 For advertisers
+      h1#advertisers For advertisers
       p With InxyAds you will find new customers and increase your visibility in the market. At your service, there is an advertising network with traffic from 192 countries from computers, smartphones, and tablets.
       p We will create an advertising campaign for you, taking into account the specifics of your business and the needs of the audience. Your personal manager will be monitoring the effectiveness of advertising and constantly improving it.
       h2 By cooperating with InxyAds you get
@@ -89,7 +89,7 @@ block main
         dt Security and protection against fraud
         dd Our unique traffic filtering technologies analyze each user and provide the maximum quality of traffic.
 
-      p: .btn.btn--large.btn__blue.popup-form(href="#advertiser") Add Advert
+      p: .btn.btn--large.btn__green.popup-form(href="#advertiser-modal") Add Advert
 
       .payments-block
         h2 Payment methods
