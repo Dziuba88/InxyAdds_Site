@@ -570,8 +570,85 @@ p {
 
 }
 
+
+.aboutus {
+  &__header {
+    h2, p {
+      font-weight: 700;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  &__comment {
+    h3 {
+      small {
+        display: block;
+      }
+    }
+    p {
+      font-style: italic;
+      font-size: 15px;
+    }
+
+    @media #{$tablet-down} {
+      text-align: center;
+      padding-top: 20px;
+      p {font-size: 1em;}
+    }
+  }
+
+  &__copy {
+    img {
+      width: 200px;
+      max-width: 100%;
+    }
+    p {
+      font-style: italic;
+      font-size: 15px;
+    }
+
+    @media #{$tablet-down} {
+      text-align: center;
+      padding-top: 20px;
+      p {font-size: 1em;}
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #twitter-widget-0 {max-height: 214px !important}
 .IN-button {display: none;}
+
 @media #{$normal-down} {
   .page-content {padding: 50px;margin-bottom: 50px;}  
   .features h2 {font-size: 32px;}
@@ -585,6 +662,7 @@ p {
     &:before {left: 125px;}
   }
 }
+
 @media #{$mobile-screen} {
   body {display: block;}
   h1 {margin: 20px 0;font-size: 32px;}
